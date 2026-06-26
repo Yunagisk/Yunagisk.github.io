@@ -1,0 +1,298 @@
+/* 1. 全局卡片变成高质感半透明玻璃（带亮边框和柔和阴影） */
+.index-card, .board, .about-card, .row .col-md-3, .row .col-lg-3 {
+    background: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05) !important;
+}
+
+/* 2. 强行重构主容器：让单栏强行裂变为左右双栏布局 */
+@media (min-width: 992px) {
+    /* 扩大首页卡片容器的宽度上限 */
+    .container .row {
+        display: flex !important;
+        flex-direction: row-reverse !important; /* 侧边栏居左，内容居右 */
+        max-width: 1300px !important;
+        margin: 0 auto !important;
+    }
+    
+    /* 强行把原本居中的大板卡裁剪为右侧栏（占 75% 宽度） */
+    .col-lg-10.col-md-10.offset-md-1 {
+        flex: 0 0 75% !important;
+        max-width: 75% !important;
+        margin-left: 0 !important;
+        padding-left: 20px !important;
+    }
+
+    /* 强行在左侧无中生有，抠出一个 25% 宽度的悬浮侧边栏空间 */
+    .container .row::before {
+        content: "" !important;
+        flex: 0 0 23% !important;
+        max-width: 23% !important;
+        margin-right: 2% !important;
+    }
+}
+
+/* 3. 鼠标悬停卡片时的二次元动态浮动反馈 */
+.index-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 4. 侧边栏菜单：隐藏图标 + 文字居中 */
+.sidebar-menu-icon {
+    display: none !important;
+}
+
+.sidebar-menu-link-wrap {
+    justify-content: center !important;
+}
+
+.sidebar-menu-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 10px 15px !important;
+}
+
+.sidebar-state-article {
+    border-right: none !important;
+}
+
+.sidebar-state-tag {
+    border-left: none !important;
+}
+
+/* 5. 把底部会动的虚线改成一条实线，并在上方右侧添加一个奔跑的占位角色 */
+.footer-line {
+    background: var(--red-1) !important;
+    width: 100% !important;
+    height: 2px !important;
+    animation: none !important;
+    filter: none !important;
+    position: relative !important;
+}
+
+.footer-line::before {
+    content: '';
+    position: absolute;
+    right: 10%;
+    bottom: 8px;
+    width: 60px;
+    height: 75px;
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2080%20100%22%20width%3D%2260%22%20height%3D%2275%22%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Cpath%20d%3D%22M20%2C25%20Q40%2C5%2060%2C25%20Q68%2C45%2062%2C70%20Q55%2C75%2050%2C70%20L50%2C45%20Q40%2C40%2030%2C45%20L30%2C70%20Q25%2C75%2018%2C70%20Q12%2C45%2020%2C25%22%20fill%3D%22%2339C5BB%22/%3E%0A%20%20%20%20%3Cellipse%20cx%3D%2240%22%20cy%3D%2232%22%20rx%3D%2216%22%20ry%3D%2218%22%20fill%3D%22%23FFEAE0%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M24%2C25%20Q40%2C15%2056%2C25%20Q50%2C35%2040%2C30%20Q30%2C35%2024%2C25%22%20fill%3D%22%2339C5BB%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2234%22%20cy%3D%2232%22%20r%3D%222.5%22%20fill%3D%22%23222%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2246%22%20cy%3D%2232%22%20r%3D%222.5%22%20fill%3D%22%23222%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M37%2C40%20Q40%2C42%2043%2C40%22%20stroke%3D%22%23D68%22%20stroke-width%3D%221.5%22%20fill%3D%22none%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2230%22%20y%3D%2250%22%20width%3D%2220%22%20height%3D%2228%22%20rx%3D%224%22%20fill%3D%22%2339C5BB%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2238%22%20y%3D%2250%22%20width%3D%224%22%20height%3D%2212%22%20fill%3D%22%23D68%22/%3E%0A%20%20%20%20%3Cline%20x1%3D%2230%22%20y1%3D%2255%22%20x2%3D%2215%22%20y2%3D%2268%22%20stroke%3D%22%23FFEAE0%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%3Cline%20x1%3D%2250%22%20y1%3D%2255%22%20x2%3D%2265%22%20y2%3D%2268%22%20stroke%3D%22%23FFEAE0%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%3Cline%20x1%3D%2234%22%20y1%3D%2278%22%20x2%3D%2228%22%20y2%3D%2295%22%20stroke%3D%22%23222%22%20stroke-width%3D%226%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%3Cline%20x1%3D%2246%22%20y1%3D%2278%22%20x2%3D%2252%22%20y2%3D%2295%22%20stroke%3D%22%23222%22%20stroke-width%3D%226%22%20stroke-linecap%3D%22round%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2223%22%20y%3D%2292%22%20width%3D%2210%22%20height%3D%228%22%20rx%3D%222%22%20fill%3D%22%23222%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2247%22%20y%3D%2292%22%20width%3D%2210%22%20height%3D%228%22%20rx%3D%222%22%20fill%3D%22%23222%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E") no-repeat center/contain;
+    animation: run-in-place 0.5s steps(2) infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes run-in-place {
+    0% {
+        transform: translateY(0) rotate(-2deg);
+    }
+    50% {
+        transform: translateY(-6px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0) rotate(-2deg);
+    }
+}
+
+/* 6. 友链页面改造成卡片式"朋友们"布局 */
+.friend-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    padding: 20px 0 !important;
+}
+
+.friend-item-wrap {
+    display: flex !important;
+    align-items: center !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    border-radius: 16px !important;
+    padding: 16px 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 4px 20px rgba(31, 38, 135, 0.08) !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+    position: relative !important;
+}
+
+.friend-item-wrap:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 30px rgba(31, 38, 135, 0.15) !important;
+}
+
+.friend-item-wrap::after {
+    content: '\f08e';
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: var(--grey-9);
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.friend-icon-wrap {
+    flex-shrink: 0 !important;
+    width: 56px !important;
+    height: 56px !important;
+    margin-right: 16px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    background: #f5f5f5 !important;
+}
+
+.friend-icon-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.friend-info-wrap {
+    flex: 1 !important;
+    min-width: 0 !important;
+}
+
+.friend-name {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: var(--color-default) !important;
+    margin-bottom: 6px !important;
+}
+
+.friend-desc {
+    font-size: 14px !important;
+    color: var(--grey-9) !important;
+    line-height: 1.4 !important;
+}
+
+@media (max-width: 768px) {
+    .friend-wrap {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* 7. 项目页面卡片式布局（大封面图在上） */
+.page-projects .friend-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+}
+
+.page-projects .friend-item-wrap {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+.page-projects .friend-icon-wrap {
+    width: 100% !important;
+    height: 180px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+.page-projects .friend-icon-wrap img {
+    object-fit: cover !important;
+}
+
+.page-projects .friend-info-wrap {
+    padding: 16px 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+    .page-projects .friend-wrap {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* 8. banner 图片向上偏移，让人物头部露出来 */
+#header img {
+    object-position: 50% 25% !important;
+}
+
+/* 9. 归档页面：日期统计 + 紧凑时间线 */
+.archives-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.archives-stats .stat-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 14px 20px;
+    flex: 1 1 200px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.archives-stats .stat-card .stat-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--red-0);
+}
+
+.archives-stats .stat-card .stat-label {
+    font-size: 13px;
+    color: var(--grey-9);
+    margin-top: 4px;
+}
+
+.archives-post-count {
+    padding: 0 36px 0 36px;
+    margin-left: 0;
+}
+
+/* 年份标题旁边的篇数标签 */
+.archive-year-count {
+    display: inline-block;
+    background: var(--red-5);
+    color: var(--red-1);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 3px 12px;
+    border-radius: 10px;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.archives-wrap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.archive-article {
+    display: flex;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.08);
+}
+
+.archive-article:before {
+    display: none;
+}
+
+.archive-article-date {
+    flex-shrink: 0;
+    min-width: 50px;
+    color: var(--grey-9);
+    font-size: 14px;
+}
+
+.archive-article-title {
+    margin-left: 12px;
+    opacity: 1;
+}
