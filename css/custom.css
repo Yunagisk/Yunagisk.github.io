@@ -127,17 +127,6 @@
     box-shadow: 0 8px 30px rgba(31, 38, 135, 0.15) !important;
 }
 
-.friend-item-wrap::after {
-    content: '\f08e';
-    font-family: 'FontAwesome';
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: var(--grey-9);
-    font-size: 14px;
-    opacity: 0.6;
-}
-
 .friend-icon-wrap {
     flex-shrink: 0 !important;
     width: 56px !important;
@@ -241,7 +230,7 @@
 .archives-stats .stat-card .stat-value {
     font-size: 22px;
     font-weight: 700;
-    color: var(--red-0);
+    color: var(--grey-9);
 }
 
 .archives-stats .stat-card .stat-label {
@@ -295,4 +284,13 @@
 .archive-article-title {
     margin-left: 12px;
     opacity: 1;
+}
+
+/* 10. 顶部导航栏背景改为天蓝色 */
+#header-nav {
+    background: rgba(187, 222, 251, 0.9) !important;
+}
+
+#header-nav:hover {
+    background: rgba(187, 222, 251, 0.95) !important;
 }
