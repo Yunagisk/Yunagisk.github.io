@@ -17,15 +17,15 @@
     
 <link rel="stylesheet" href="/css/loader.css">
 
-    <meta name="description" content="CSDN原文：https:&#x2F;&#x2F;blog.csdn.net&#x2F;Duskince&#x2F;article&#x2F;details&#x2F;162019307  也是顺利结束了，博主也是成功转到了软工做预备牛马，想到之前踩过的很多坑和一点点小遗憾（虽然五题全都会但是因为一个 int 忘记转 double 的变量声明问题错过 AK 机会），我觉得还是比较有必要写这样一篇博客来告诫后人（bushi），希望能有所帮助。  机考小 T">
+    <meta name="description" content="CSDN原文：https:&#x2F;&#x2F;blog.csdn.net&#x2F;Duskince&#x2F;article&#x2F;details&#x2F;162019307  转专业也是顺利结束了，博主也是成功转到了软工做预备牛马，想到之前踩过的很多坑和一点点小遗憾（虽然五题全都会但是因为一个 int 忘记转 double 的变量声明问题错过 AK 机会），我觉得还是比较有必要写这样一篇博客来告诫后人（bushi），希望能有所帮助。  机考">
 <meta property="og:type" content="article">
 <meta property="og:title" content="转专业真题+解析+小谈">
 <meta property="og:url" content="https://yunagisk.github.io/2026/06/26/2026-%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E8%BD%AC%E4%B8%93%E4%B8%9A%E6%9C%BA%E8%AF%95/index.html">
 <meta property="og:site_name" content="Yunagisk">
-<meta property="og:description" content="CSDN原文：https:&#x2F;&#x2F;blog.csdn.net&#x2F;Duskince&#x2F;article&#x2F;details&#x2F;162019307  也是顺利结束了，博主也是成功转到了软工做预备牛马，想到之前踩过的很多坑和一点点小遗憾（虽然五题全都会但是因为一个 int 忘记转 double 的变量声明问题错过 AK 机会），我觉得还是比较有必要写这样一篇博客来告诫后人（bushi），希望能有所帮助。  机考小 T">
+<meta property="og:description" content="CSDN原文：https:&#x2F;&#x2F;blog.csdn.net&#x2F;Duskince&#x2F;article&#x2F;details&#x2F;162019307  转专业也是顺利结束了，博主也是成功转到了软工做预备牛马，想到之前踩过的很多坑和一点点小遗憾（虽然五题全都会但是因为一个 int 忘记转 double 的变量声明问题错过 AK 机会），我觉得还是比较有必要写这样一篇博客来告诫后人（bushi），希望能有所帮助。  机考">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-06-26T12:58:00.000Z">
-<meta property="article:modified_time" content="2026-06-26T14:19:17.209Z">
+<meta property="article:modified_time" content="2026-07-06T14:28:29.372Z">
 <meta property="article:author" content="Yunagisk">
 <meta property="article:tag" content="C++">
 <meta property="article:tag" content="OJ">
@@ -237,7 +237,7 @@
       <div class="article-date">
   <span class="article-date-link icon-calendar" data-aos="zoom-in">
     <time datetime="2026-06-26T12:58:00.000Z" itemprop="datePublished">2026-06-26</time>
-    <time style="display: none;" id="post-update-time">2026-06-26</time>
+    <time style="display: none;" id="post-update-time">2026-07-06</time>
   </span>
 </div>
 
@@ -249,7 +249,7 @@
         <blockquote>
 <p>CSDN原文：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Duskince/article/details/162019307">https://blog.csdn.net/Duskince/article/details/162019307</a></p>
 </blockquote>
-<p>也是顺利结束了，博主也是成功转到了软工做预备牛马，想到之前踩过的很多坑和一点点小遗憾（虽然五题全都会但是因为一个 <code>int</code> 忘记转 <code>double</code> 的变量声明问题错过 AK 机会），我觉得还是比较有必要写这样一篇博客来告诫后人（bushi），希望能有所帮助。</p>
+<p>转专业也是顺利结束了，博主也是成功转到了软工做预备牛马，想到之前踩过的很多坑和一点点小遗憾（虽然五题全都会但是因为一个 <code>int</code> 忘记转 <code>double</code> 的变量声明问题错过 AK 机会），我觉得还是比较有必要写这样一篇博客来告诫后人（bushi），希望能有所帮助。</p>
 <h2 id="机考小-tips"><a class="markdownIt-Anchor" href="#机考小-tips"></a> 机考小 Tips</h2>
 <ul>
 <li>能用 C++ 最好用 C++，STL 库的 <code>vector</code>（不要再傻傻用静态数组开 9999999 个空间了，动态数组可以不用 <code>const</code> 啥的实现变量定义空间大小，它自带的一系列函数静态数组大多都用不了但是非常好用，还是很值得学一下的），<code>map</code> / <code>set</code> 也可以学一下在特定的环境会超级好用，然后学一下常用的 <code>sort</code> 等函数和迭代器，能让你速通大部分真题。</li>
@@ -555,9 +555,9 @@
           url: "https://yunagisk.github.io/2026/06/26/2026-%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E8%BD%AC%E4%B8%93%E4%B8%9A%E6%9C%BA%E8%AF%95/",
           excerpt: "",
           description: "",
-          stripContent: " CSDN原文：https://blog.csdn.net/Duskince/article/details/162019307  也是顺利结束了，博主也是成功转到了软工做预备牛马，想到之前踩过的很多坑和一点点小遗憾（虽然五题全都会但是因为一个 int 忘记转 double 的变量声明问题错过 AK 机会），我觉得还是比较有必要写这样一篇博客来告诫后人（bushi），希望能有所帮助。  机考小 Tips  能用 C++ 最好用 C++，STL 库的 vector（不要再傻傻用静态数组开 9999",
+          stripContent: " CSDN原文：https://blog.csdn.net/Duskince/article/details/162019307  转专业也是顺利结束了，博主也是成功转到了软工做预备牛马，想到之前踩过的很多坑和一点点小遗憾（虽然五题全都会但是因为一个 int 忘记转 double 的变量声明问题错过 AK 机会），我觉得还是比较有必要写这样一篇博客来告诫后人（bushi），希望能有所帮助。  机考小 Tips  能用 C++ 最好用 C++，STL 库的 vector（不要再傻傻用静态数组开 9",
           date: "Fri Jun 26 2026 20:58:00 GMT+0800",
-          updated: "Fri Jun 26 2026 22:19:17 GMT+0800",
+          updated: "Mon Jul 06 2026 22:28:29 GMT+0800",
           cover: "/img/zhuan-ye-cover.jpg",
         };
       </script>
