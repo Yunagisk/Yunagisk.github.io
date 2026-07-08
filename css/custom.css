@@ -204,14 +204,18 @@
     }
 }
 
-/* 8. 首页 banner 图片：显示人物（仅作用于 .home，不影响文章页） */
-.home #header {
+/* 8. banner 图片：首页 + 归档/分类/标签/项目/关于/友链等页面统一效果（不影响文章页） */
+.home #header,
+.other #header,
+.page #header {
     height: 45vh !important;
     min-height: 350px !important;
     margin-bottom: 0 !important;
 }
 
-.home #header > img {
+.home #header > img,
+.other #header > img,
+.page #header > img {
     height: 100% !important;
     object-fit: cover !important;
     object-position: 50% 70% !important;
@@ -219,13 +223,17 @@
     mask: linear-gradient(to bottom, #fff 60%, transparent 100%) !important;
 }
 
-.home #content {
+.home #content,
+.other #content,
+.page #content {
     padding-top: 0 !important;
     margin-top: 0 !important;
 }
 
 @media (max-width: 768px) {
-    .home #header {
+    .home #header,
+    .other #header,
+    .page #header {
         height: 35vh !important;
         min-height: 250px !important;
     }
@@ -308,11 +316,108 @@
     opacity: 1;
 }
 
-/* 10. 顶部导航栏背景改为天蓝色 */
+/* 10. 顶部导航栏改为胶囊式玻璃拟态 */
 #header-nav {
-    background: rgba(187, 222, 251, 0.9) !important;
+    position: fixed !important;
+    top: 10px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+    max-width: 420px !important;
+    min-width: 0 !important;
+    padding: 0 10px !important;
+    border-radius: 11px !important;
+    background: rgba(200, 230, 255, 0.78) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.55) !important;
+    box-shadow: 0 3px 12px rgba(31, 38, 135, 0.07) !important;
+    justify-content: center !important;
+    z-index: 200 !important;
+    transition: background 0.3s, box-shadow 0.3s, top 0.4s ease, opacity 0.4s ease !important;
+}
+
+#header-nav.header-nav-hidden {
+    top: -60px !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }
 
 #header-nav:hover {
-    background: rgba(187, 222, 251, 0.95) !important;
+    background: rgba(200, 230, 255, 0.9) !important;
+    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.1) !important;
+}
+
+#header-nav #sub-nav,
+#header-nav #i18n-nav {
+    display: none !important;
+}
+
+#main-nav {
+    justify-content: center !important;
+    gap: 2px !important;
+    flex-wrap: nowrap !important;
+}
+
+.main-nav-link-wrap {
+    padding: 0 5px !important;
+    border-radius: 8px !important;
+    color: #334155 !important;
+    opacity: 1 !important;
+    white-space: nowrap !important;
+    transition: color 0.25s ease !important;
+}
+
+.main-nav-link-wrap:hover {
+    background: transparent !important;
+}
+.main-nav-link-wrap:hover .main-nav-link,
+.main-nav-link-wrap:hover .main-nav-icon {
+    color: #3b82f6 !important;
+    opacity: 1 !important;
+}
+
+.main-nav-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    font-size: 13px !important;
+    margin-right: 4px !important;
+    padding: 0 !important;
+    opacity: 0.85 !important;
+    color: inherit !important;
+}
+
+.main-nav-icon.rotate {
+    transform: none !important;
+}
+
+.main-nav-link {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    opacity: 1 !important;
+    transition: color 0.25s ease !important;
+}
+
+@media (max-width: 768px) {
+    #header-nav {
+        max-width: 92vw !important;
+        min-width: 0 !important;
+        padding: 1px 10px !important;
+        border-radius: 9px !important;
+    }
+
+    .main-nav-link-wrap {
+        padding: 1px 8px !important;
+    }
+
+    .main-nav-link {
+        font-size: 11px !important;
+    }
+
+    .main-nav-icon {
+        margin-right: 3px !important;
+        font-size: 11px !important;
+    }
 }

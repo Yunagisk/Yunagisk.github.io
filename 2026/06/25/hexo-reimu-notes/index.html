@@ -17,12 +17,12 @@
     
 <link rel="stylesheet" href="/css/loader.css">
 
-    <meta name="description" content="最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。  头像配置 reimu 主题的头像路径会强制拼接 &#x2F;avatar&#x2F;，所以配置时只需要写文件名即可： 1avatar: avatar.png 同时头像文件需要放在 source&#x2F;_data&#x2F;avatar&#x2F; 目录下。  主色调修改 在 themes&#x2F;reimu&#x2F;_config.yml 的 internal">
+    <meta name="description" content="最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。 头像配置reimu 主题的头像路径会强制拼接 &#x2F;avatar&#x2F;，所以配置时只需要写文件名即可： 1avatar: avatar.png  同时头像文件需要放在 source&#x2F;_data&#x2F;avatar&#x2F; 目录下。 主色调修改在 themes&#x2F;reimu&#x2F;_config.yml 的 internal_th">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo + reimu 主题美化笔记">
 <meta property="og:url" content="https://yunagisk.github.io/2026/06/25/hexo-reimu-notes/index.html">
 <meta property="og:site_name" content="Yunagisk">
-<meta property="og:description" content="最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。  头像配置 reimu 主题的头像路径会强制拼接 &#x2F;avatar&#x2F;，所以配置时只需要写文件名即可： 1avatar: avatar.png 同时头像文件需要放在 source&#x2F;_data&#x2F;avatar&#x2F; 目录下。  主色调修改 在 themes&#x2F;reimu&#x2F;_config.yml 的 internal">
+<meta property="og:description" content="最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。 头像配置reimu 主题的头像路径会强制拼接 &#x2F;avatar&#x2F;，所以配置时只需要写文件名即可： 1avatar: avatar.png  同时头像文件需要放在 source&#x2F;_data&#x2F;avatar&#x2F; 目录下。 主色调修改在 themes&#x2F;reimu&#x2F;_config.yml 的 internal_th">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-06-25T11:30:00.000Z">
 <meta property="article:modified_time" content="2026-06-25T16:08:26.450Z">
@@ -154,7 +154,7 @@
     <div class="sidebar-wrap" data-aos="fade-up">
           <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class" >
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text"> 头像配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%89%B2%E8%B0%83%E4%BF%AE%E6%94%B9"><span class="toc-number">2.</span> <span class="toc-text"> 主色调修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E5%88%86%E7%B1%BB%E6%A8%AA%E5%B9%85"><span class="toc-number">3.</span> <span class="toc-text"> 首页分类横幅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text"> 小结</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text">头像配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%89%B2%E8%B0%83%E4%BF%AE%E6%94%B9"><span class="toc-number">2.</span> <span class="toc-text">主色调修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E5%88%86%E7%B1%BB%E6%A8%AA%E5%B9%85"><span class="toc-number">3.</span> <span class="toc-text">首页分类横幅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">小结</span></a></li></ol>
 </div>
 </div>
           <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
@@ -246,17 +246,15 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
         <p>最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。</p>
-<h2 id="头像配置"><a class="markdownIt-Anchor" href="#头像配置"></a> 头像配置</h2>
-<p>reimu 主题的头像路径会强制拼接 <code>/avatar/</code>，所以配置时只需要写文件名即可：</p>
+<h2 id="头像配置"><a href="#头像配置" class="headerlink" title="头像配置"></a>头像配置</h2><p>reimu 主题的头像路径会强制拼接 <code>/avatar/</code>，所以配置时只需要写文件名即可：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar:</span> <span class="string">avatar.png</span></span><br></pre></td></tr></table></figure>
+
 <p>同时头像文件需要放在 <code>source/_data/avatar/</code> 目录下。</p>
-<h2 id="主色调修改"><a class="markdownIt-Anchor" href="#主色调修改"></a> 主色调修改</h2>
-<p>在 <code>themes/reimu/_config.yml</code> 的 <code>internal_theme</code> 里可以自定义一套颜色，我把主色调改成了冰蓝色。</p>
-<h2 id="首页分类横幅"><a class="markdownIt-Anchor" href="#首页分类横幅"></a> 首页分类横幅</h2>
-<p>开启 <code>home_categories</code> 后，可以在首页顶部展示分类大图卡片：</p>
+<h2 id="主色调修改"><a href="#主色调修改" class="headerlink" title="主色调修改"></a>主色调修改</h2><p>在 <code>themes/reimu/_config.yml</code> 的 <code>internal_theme</code> 里可以自定义一套颜色，我把主色调改成了冰蓝色。</p>
+<h2 id="首页分类横幅"><a href="#首页分类横幅" class="headerlink" title="首页分类横幅"></a>首页分类横幅</h2><p>开启 <code>home_categories</code> 后，可以在首页顶部展示分类大图卡片：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_categories:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">content:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">categories:</span> <span class="string">技术</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="string">/img/post-cover.jpg</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">categories:</span> <span class="string">生活</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="string">/img/post-cover.jpg</span></span><br></pre></td></tr></table></figure>
-<h2 id="小结"><a class="markdownIt-Anchor" href="#小结"></a> 小结</h2>
-<p>reimu 主题的可配置项非常丰富，多看看 <code>_config.yml</code> 和主题文档，基本可以做出自己想要的效果。</p>
+
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>reimu 主题的可配置项非常丰富，多看看 <code>_config.yml</code> 和主题文档，基本可以做出自己想要的效果。</p>
 
     </div>
     <footer class="article-footer">
@@ -324,7 +322,7 @@
   <div class="sidebar-wrap">
         <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class" >
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text"> 头像配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%89%B2%E8%B0%83%E4%BF%AE%E6%94%B9"><span class="toc-number">2.</span> <span class="toc-text"> 主色调修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E5%88%86%E7%B1%BB%E6%A8%AA%E5%B9%85"><span class="toc-number">3.</span> <span class="toc-text"> 首页分类横幅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text"> 小结</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text">头像配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%89%B2%E8%B0%83%E4%BF%AE%E6%94%B9"><span class="toc-number">2.</span> <span class="toc-text">主色调修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E5%88%86%E7%B1%BB%E6%A8%AA%E5%B9%85"><span class="toc-number">3.</span> <span class="toc-text">首页分类横幅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">小结</span></a></li></ol>
 </div>
 </div>
         <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
@@ -460,7 +458,7 @@
           url: "https://yunagisk.github.io/2026/06/25/hexo-reimu-notes/",
           excerpt: "",
           description: "",
-          stripContent: "最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。  头像配置 reimu 主题的头像路径会强制拼接 /avatar/，所以配置时只需要写文件名即可： 1avatar: avatar.png 同时头像文件需要放在 source/_data/avatar/ 目录下。  主色调修改 在 themes/reimu/_config.yml 的 internal_theme 里可以自定义一套颜色，我把主色调改成了冰蓝色。  首页分类横幅 开启 home_cat",
+          stripContent: "最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。 头像配置reimu 主题的头像路径会强制拼接 /avatar/，所以配置时只需要写文件名即可： 1avatar: avatar.png  同时头像文件需要放在 source/_data/avatar/ 目录下。 主色调修改在 themes/reimu/_config.yml 的 internal_theme 里可以自定义一套颜色，我把主色调改成了冰蓝色。 首页分类横幅开启 home_categori",
           date: "Thu Jun 25 2026 19:30:00 GMT+0800",
           updated: "Fri Jun 26 2026 00:08:26 GMT+0800",
           cover: "/img/reimu-cover.jpg",
