@@ -208,8 +208,8 @@
 .home #header,
 .other #header,
 .page #header {
-    height: 45vh !important;
-    min-height: 350px !important;
+    height: 60vh !important;
+    min-height: 460px !important;
     margin-bottom: 0 !important;
 }
 
@@ -218,9 +218,9 @@
 .page #header > img {
     height: 100% !important;
     object-fit: cover !important;
-    object-position: 50% 70% !important;
-    -webkit-mask: linear-gradient(to bottom, #fff 60%, transparent 100%) !important;
-    mask: linear-gradient(to bottom, #fff 60%, transparent 100%) !important;
+    object-position: 50% 100% !important;
+    -webkit-mask: linear-gradient(to top, transparent, #fff 15%) !important;
+    mask: linear-gradient(to top, transparent, #fff 15%) !important;
 }
 
 .home #content,
@@ -230,26 +230,51 @@
     margin-top: 0 !important;
 }
 
-/* 8.1 仅《Git 指令速查》这一篇：图片焦点下移露出 Miku 脸部（不影响其他文章） */
+/* 8.1 仅《Git 指令速查》这一篇：header 显示 Miku 完整脸部（不影响其他文章） */
 .post #header:has(> img[alt="Git 指令速查"]) {
     height: 50vh !important;
     min-height: 400px !important;
+    margin-bottom: 0 !important;
 }
 
 .post #header > img[alt="Git 指令速查"] {
     height: 100% !important;
+    width: 100% !important;
     object-fit: cover !important;
-    object-position: 50% 45% !important;
-    -webkit-mask: linear-gradient(to bottom, #fff 75%, transparent 100%) !important;
-    mask: linear-gradient(to bottom, #fff 75%, transparent 100%) !important;
+    object-position: 50% 50% !important;
+    -webkit-mask: linear-gradient(to bottom, #fff 95%, transparent 100%) !important;
+    mask: linear-gradient(to bottom, #fff 95%, transparent 100%) !important;
+}
+
+.post #header:has(> img[alt="Git 指令速查"]) ~ #content,
+.post #content {
+    padding-top: 0 !important;
 }
 
 @media (max-width: 768px) {
     .home #header,
     .other #header,
     .page #header {
-        height: 35vh !important;
-        min-height: 250px !important;
+        height: 45vh !important;
+        min-height: 320px !important;
+    }
+}
+
+/* 8.2 首页内容整体上移，和横幅衔接更紧凑 */
+.home #content {
+    margin-top: -48px !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.home #content .index-card,
+.home #content .board {
+    margin-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .home #content {
+        margin-top: -28px !important;
     }
 }
 
