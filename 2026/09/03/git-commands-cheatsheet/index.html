@@ -7,7 +7,7 @@
   
   <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_ex15nbittbh';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://yunagisk.github.io';window.REIMU_CONFIG.relative = '/';window.REIMU_CONFIG.dark_mode = {"button":true,"mode":"auto"};</script>
   <title>
-    Hexo + reimu 主题美化笔记 | Yunagisk
+    Git 指令速查 | Yunagisk
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|Noto Serif SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|Noto Serif SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media='all'">
@@ -15,19 +15,19 @@
     
 <link rel="stylesheet" href="/css/loader.css">
 
-    <meta name="description" content="最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。  头像配置 reimu 主题的头像路径会强制拼接 &#x2F;avatar&#x2F;，所以配置时只需要写文件名即可： 1avatar: avatar.png 同时头像文件需要放在 source&#x2F;_data&#x2F;avatar&#x2F; 目录下。  主色调修改 在 themes&#x2F;reimu&#x2F;_config.yml 的 internal">
+    <meta name="description" content="平时写项目总会遇到 Git 操作，记不住命令每次都要查一遍。这篇博客把日常用到的 Git + GitHub 指令整理出来，方便快速翻阅。  一、首次创建项目并同步至 GitHub  1. 本地新建文件夹并初始化 1234567891011# 新建文件夹（例如 MyGame）mkdir MyGame# 进入文件夹cd MyGame# 初始化本地 Git 仓库git init# 将默认分支名切换为 m">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo + reimu 主题美化笔记">
-<meta property="og:url" content="https://yunagisk.github.io/2026/06/25/hexo-reimu-notes/index.html">
+<meta property="og:title" content="Git 指令速查">
+<meta property="og:url" content="https://yunagisk.github.io/2026/09/03/git-commands-cheatsheet/index.html">
 <meta property="og:site_name" content="Yunagisk">
-<meta property="og:description" content="最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。  头像配置 reimu 主题的头像路径会强制拼接 &#x2F;avatar&#x2F;，所以配置时只需要写文件名即可： 1avatar: avatar.png 同时头像文件需要放在 source&#x2F;_data&#x2F;avatar&#x2F; 目录下。  主色调修改 在 themes&#x2F;reimu&#x2F;_config.yml 的 internal">
+<meta property="og:description" content="平时写项目总会遇到 Git 操作，记不住命令每次都要查一遍。这篇博客把日常用到的 Git + GitHub 指令整理出来，方便快速翻阅。  一、首次创建项目并同步至 GitHub  1. 本地新建文件夹并初始化 1234567891011# 新建文件夹（例如 MyGame）mkdir MyGame# 进入文件夹cd MyGame# 初始化本地 Git 仓库git init# 将默认分支名切换为 m">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-06-25T11:30:00.000Z">
-<meta property="article:modified_time" content="2026-06-25T16:08:26.450Z">
+<meta property="article:published_time" content="2026-09-03T12:57:00.000Z">
+<meta property="article:modified_time" content="2026-09-03T13:25:45.916Z">
 <meta property="article:author" content="Yunagisk">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="reimu">
-<meta property="article:tag" content="主题">
+<meta property="article:tag" content="指令速查">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="GitHub">
 <meta name="twitter:card" content="summary">
     <link rel="alternate" href="/atom.xml" title="Yunagisk" type="application/atom+xml">
     <link rel="shortcut icon" href="/images/favicon.png">
@@ -133,11 +133,11 @@
 </div>
 <header id="header" aria-label="Site header">
     <picture></picture>
-    <img  fetchpriority="high" src="/img/reimu-cover.jpg" alt="Hexo + reimu 主题美化笔记">
+    <img  fetchpriority="high" src="/img/git-cover.jpg" alt="Git 指令速查">
   <div id="header-outer">
     <div id="header-title">
           <span id="logo">
-            <h1 data-aos="slide-up">Hexo + reimu 主题美化笔记</h1>
+            <h1 data-aos="slide-up">Git 指令速查</h1>
           </span>
         <h2 id="subtitle-wrap" data-aos="slide-down">
         </h2>
@@ -152,7 +152,7 @@
     <div class="sidebar-wrap" data-aos="fade-up">
           <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class" >
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text"> 头像配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%89%B2%E8%B0%83%E4%BF%AE%E6%94%B9"><span class="toc-number">2.</span> <span class="toc-text"> 主色调修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E5%88%86%E7%B1%BB%E6%A8%AA%E5%B9%85"><span class="toc-number">3.</span> <span class="toc-text"> 首页分类横幅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text"> 小结</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E9%A6%96%E6%AC%A1%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%B9%B6%E5%90%8C%E6%AD%A5%E8%87%B3-github"><span class="toc-number">1.</span> <span class="toc-text"> 一、首次创建项目并同步至 GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%9C%AC%E5%9C%B0%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.1.</span> <span class="toc-text"> 1. 本地新建文件夹并初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%94%9F%E6%88%90-gitignore-%E8%BF%87%E6%BB%A4%E6%96%87%E4%BB%B6%E4%BB%A5-unity-%E4%B8%BA%E4%BE%8B"><span class="toc-number">1.2.</span> <span class="toc-text"> 2. 生成 .gitignore 过滤文件（以 Unity 为例）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9C%AC%E5%9C%B0%E6%8F%90%E4%BA%A4%E4%B8%8E-ssh-%E5%85%B3%E8%81%94%E6%8E%A8%E9%80%81"><span class="toc-number">1.3.</span> <span class="toc-text"> 3. 第一次本地提交与 SSH 关联推送</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E6%AF%8F%E6%AC%A1%E4%B8%8A%E4%BC%A0%E6%8C%87%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text"> 二、日常开发中的每次上传指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-gitignore-%E6%9C%BA%E5%88%B6%E4%B8%8E%E9%80%9A%E9%85%8D%E7%AC%A6%E8%AF%A6%E8%A7%A3"><span class="toc-number">3.</span> <span class="toc-text"> 三、.gitignore 机制与通配符详解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A0%B8%E5%BF%83%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99%E4%B8%8E%E7%A4%BA%E4%BE%8B"><span class="toc-number">3.1.</span> <span class="toc-text"> 1. 核心语法规则与示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88-unity-%E9%A1%B9%E7%9B%AE%E5%BF%85%E9%A1%BB%E9%85%8D%E7%BD%AE-gitignore"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 为什么 Unity 项目必须配置 .gitignore？</span></a></li></ol></li></ol>
 </div>
 </div>
           <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
@@ -228,13 +228,13 @@
   </div>
 </aside>
 
-          <section id="main" aria-label="Main content"><article id="post-hexo-reimu-notes" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
+          <section id="main" aria-label="Main content"><article id="post-git-commands-cheatsheet" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner" data-aos="fade-up">
     <div class="article-meta">
       <div class="article-date">
   <span class="article-date-link icon-calendar" data-aos="zoom-in">
-    <time datetime="2026-06-25T11:30:00.000Z" itemprop="datePublished">2026-06-25</time>
-    <time style="display: none;" id="post-update-time">2026-06-26</time>
+    <time datetime="2026-09-03T12:57:00.000Z" itemprop="datePublished">2026-09-03</time>
+    <time style="display: none;" id="post-update-time">2026-09-03</time>
   </span>
 </div>
 
@@ -243,36 +243,101 @@
     <div class="hr-line"></div>
     
     <div class="e-content article-entry" itemprop="articleBody">
-        <p>最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。</p>
-<h2 id="头像配置"><a class="markdownIt-Anchor" href="#头像配置"></a> 头像配置</h2>
-<p>reimu 主题的头像路径会强制拼接 <code>/avatar/</code>，所以配置时只需要写文件名即可：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar:</span> <span class="string">avatar.png</span></span><br></pre></td></tr></table></figure>
-<p>同时头像文件需要放在 <code>source/_data/avatar/</code> 目录下。</p>
-<h2 id="主色调修改"><a class="markdownIt-Anchor" href="#主色调修改"></a> 主色调修改</h2>
-<p>在 <code>themes/reimu/_config.yml</code> 的 <code>internal_theme</code> 里可以自定义一套颜色，我把主色调改成了冰蓝色。</p>
-<h2 id="首页分类横幅"><a class="markdownIt-Anchor" href="#首页分类横幅"></a> 首页分类横幅</h2>
-<p>开启 <code>home_categories</code> 后，可以在首页顶部展示分类大图卡片：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_categories:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">content:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">categories:</span> <span class="string">技术</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="string">/img/post-cover.jpg</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">categories:</span> <span class="string">生活</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="string">/img/post-cover.jpg</span></span><br></pre></td></tr></table></figure>
-<h2 id="小结"><a class="markdownIt-Anchor" href="#小结"></a> 小结</h2>
-<p>reimu 主题的可配置项非常丰富，多看看 <code>_config.yml</code> 和主题文档，基本可以做出自己想要的效果。</p>
+        <p>平时写项目总会遇到 Git 操作，记不住命令每次都要查一遍。这篇博客把日常用到的 Git + GitHub 指令整理出来，方便快速翻阅。</p>
+<h2 id="一-首次创建项目并同步至-github"><a class="markdownIt-Anchor" href="#一-首次创建项目并同步至-github"></a> 一、首次创建项目并同步至 GitHub</h2>
+<h3 id="1-本地新建文件夹并初始化"><a class="markdownIt-Anchor" href="#1-本地新建文件夹并初始化"></a> 1. 本地新建文件夹并初始化</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建文件夹（例如 MyGame）</span></span><br><span class="line"><span class="built_in">mkdir</span> MyGame</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入文件夹</span></span><br><span class="line"><span class="built_in">cd</span> MyGame</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化本地 Git 仓库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将默认分支名切换为 main（符合 GitHub 规范）</span></span><br><span class="line">git branch -M main</span><br></pre></td></tr></table></figure>
+<h3 id="2-生成-gitignore-过滤文件以-unity-为例"><a class="markdownIt-Anchor" href="#2-生成-gitignore-过滤文件以-unity-为例"></a> 2. 生成 .gitignore 过滤文件（以 Unity 为例）</h3>
+<p>直接在 Git Bash 中复制运行以下代码块，避免添加 Library 等大于 100MB 的缓存大文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> &lt;&lt; <span class="string">&#x27;EOF&#x27;</span> &gt; .gitignore</span><br><span class="line"><span class="comment"># 过滤任意深层目录下的临时与缓存文件夹</span></span><br><span class="line">**/[L-l]ibrary/</span><br><span class="line">**/[T-t]emp/</span><br><span class="line">**/[O-o]bj/</span><br><span class="line">**/[B-b]uild/</span><br><span class="line">**/[B-b]uilds/</span><br><span class="line">**/[L-l]ogs/</span><br><span class="line">**/[U-u]ser[S-s]ettings/</span><br><span class="line">**/[M-m]emoryCaptures/</span><br><span class="line">**/.vs/</span><br><span class="line">**/.idea/</span><br><span class="line"></span><br><span class="line">*.csproj</span><br><span class="line">*.sln</span><br><span class="line">*.unitypackage</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<h3 id="3-第一次本地提交与-ssh-关联推送"><a class="markdownIt-Anchor" href="#3-第一次本地提交与-ssh-关联推送"></a> 3. 第一次本地提交与 SSH 关联推送</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 暂存所有文件（不包含被 .gitignore 忽略的文件）</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 提交到本地仓库</span></span><br><span class="line">git commit -m <span class="string">&quot;Initial commit&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 关联 GitHub 远程仓库（注意：使用 git@github.com: 开头的 SSH 地址！）</span></span><br><span class="line">git remote add origin git@github.com:Yunagisk/仓库名.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 首次推送到远程仓库并建立分支追踪</span></span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>⚠️ <strong>注意</strong>：SSH 连接的地址格式为 <code>git@github.com:Username/Repo.git</code>，而不是 <code>https://github.com/...</code>。</p>
+</blockquote>
+<hr />
+<h2 id="二-日常开发中的每次上传指令"><a class="markdownIt-Anchor" href="#二-日常开发中的每次上传指令"></a> 二、日常开发中的每次上传指令</h2>
+<p>日常开发写完代码、修改完场景或素材后，只需要执行简单的<strong>三步法</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 保存当前工作区的所有改动</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 提交修改并附带说明</span></span><br><span class="line">git commit -m <span class="string">&quot;完成玩家移动逻辑开发&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 推送到 GitHub（首次使用 -u 关联后，后续直接 git push 即可）</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="三-gitignore-机制与通配符详解"><a class="markdownIt-Anchor" href="#三-gitignore-机制与通配符详解"></a> 三、.gitignore 机制与通配符详解</h2>
+<p><code>.gitignore</code> 是一个纯文本文件，用来告诉 Git 哪些文件或文件夹<strong>不需要纳入版本控制</strong>。</p>
+<h3 id="1-核心语法规则与示例"><a class="markdownIt-Anchor" href="#1-核心语法规则与示例"></a> 1. 核心语法规则与示例</h3>
+<table>
+<thead>
+<tr>
+<th>语法 / 通配符</th>
+<th>说明</th>
+<th>示例</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>#</code></td>
+<td>注释行</td>
+<td><code># 这是注释</code></td>
+<td>被 Git 忽略不处理</td>
+</tr>
+<tr>
+<td><code>/</code>（前缀）</td>
+<td>仅匹配仓库根目录下的文件/文件夹</td>
+<td><code>/Library/</code></td>
+<td>只忽略根目录下的 Library，不影响子目录</td>
+</tr>
+<tr>
+<td><code>/</code>（后缀）</td>
+<td>专门用于指定文件夹</td>
+<td><code>Temp/</code></td>
+<td>匹配名为 Temp 的文件夹及其内部所有内容</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>匹配零个或多个任意字符</td>
+<td><code>*.sln</code></td>
+<td>忽略所有以 <code>.sln</code> 结尾的项目文件</td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>匹配任意层级的嵌套子目录</td>
+<td><code>**/Library/</code></td>
+<td>忽略根目录、<code>Demo_2D/Library/</code> 等任何深度下的 Library</td>
+</tr>
+<tr>
+<td><code>[]</code></td>
+<td>字符集匹配（通常用来忽略大小写）</td>
+<td><code>[L-l]ibrary/</code></td>
+<td>同时拦截 <code>Library/</code> 和 <code>library/</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-为什么-unity-项目必须配置-gitignore"><a class="markdownIt-Anchor" href="#2-为什么-unity-项目必须配置-gitignore"></a> 2. 为什么 Unity 项目必须配置 .gitignore？</h3>
+<ul>
+<li><strong>体积与限重</strong>：Unity 的 <code>Library</code> 文件夹包含了编译生成的资源缓存，动辄数 GB，且经常产生超过 100MB 的单体库文件（如 Burst 编译库 <code>libburst-llvm.dylib</code>），这会触发 GitHub 的 100MB 硬性限制导致推送失败。</li>
+<li><strong>平台无关性</strong>：<code>Library/</code>、<code>Temp/</code>、<code>Logs/</code> 和 <code>.vs/</code> 等均属于本地临时文件。其他人在拉取代码时，Unity 会根据你的 <code>Assets</code>、<code>Packages</code> 和 <code>ProjectSettings</code> 自动重新构建全新的 Library，无需上传共享。</li>
+</ul>
+<hr />
+<blockquote>
+<p>📚 这篇博客只是速查表，Git 的功能远不止这些（比如 <code>git rebase</code>、<code>git stash</code>、<code>git cherry-pick</code> 等进阶用法）。后续遇到常用命令会持续补充到这里。</p>
+</blockquote>
 
     </div>
     <footer class="article-footer">
         <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/" title="技术" data-aos="zoom-in">技术</a>
 
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag" title="Hexo">Hexo</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/reimu/" rel="tag" title="reimu">reimu</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E4%B8%BB%E9%A2%98/" rel="tag" title="主题">主题</a></li></ul>
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/Git/" rel="tag" title="Git">Git</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/GitHub/" rel="tag" title="GitHub">GitHub</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/%E6%8C%87%E4%BB%A4%E9%80%9F%E6%9F%A5/" rel="tag" title="指令速查">指令速查</a></li></ul>
 
     </footer>
   </div>
     <nav id="article-nav" aria-label="Article navigation" data-aos="fade-up">
-      <div class="article-nav-link-wrap left">
-          <img data-src="/img/post-cover.jpg" data-sizes="auto" alt="博客指令速查" class="lazyload">
-        <a href="/2026/06/25/%E5%8D%9A%E5%AE%A2%E6%8C%87%E4%BB%A4%E9%80%9F%E6%9F%A5/" aria-label="前一篇: 博客指令速查" title="前一篇: 博客指令速查"></a>
-        <div class="article-nav-caption">前一篇</div>
-        <h3 class="article-nav-title">
-            博客指令速查
-        </h3>
-      </div>
+    <div class="article-nav-link-wrap right">
+        <img data-src="/img/IMG_3652.JPG" data-sizes="auto" alt="C++算法：字符串算法 &amp;&amp; 基础搜索 &amp;&amp; 动态规划DP" class="lazyload">
+      <a href="/2026/07/08/cpp-algorithm-string-search-dp/" aria-label="后一篇: C++算法：字符串算法 &amp;&amp; 基础搜索 &amp;&amp; 动态规划DP"  title="后一篇: C++算法：字符串算法 &amp;&amp; 基础搜索 &amp;&amp; 动态规划DP"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+          C++算法：字符串算法 &amp;&amp; 基础搜索 &amp;&amp; 动态规划DP
+      </h3>
+    </div>
   </nav>
 
 </article>
@@ -322,7 +387,7 @@
   <div class="sidebar-wrap">
         <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class" >
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%B4%E5%83%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text"> 头像配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%89%B2%E8%B0%83%E4%BF%AE%E6%94%B9"><span class="toc-number">2.</span> <span class="toc-text"> 主色调修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E5%88%86%E7%B1%BB%E6%A8%AA%E5%B9%85"><span class="toc-number">3.</span> <span class="toc-text"> 首页分类横幅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text"> 小结</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E9%A6%96%E6%AC%A1%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%B9%B6%E5%90%8C%E6%AD%A5%E8%87%B3-github"><span class="toc-number">1.</span> <span class="toc-text"> 一、首次创建项目并同步至 GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%9C%AC%E5%9C%B0%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.1.</span> <span class="toc-text"> 1. 本地新建文件夹并初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%94%9F%E6%88%90-gitignore-%E8%BF%87%E6%BB%A4%E6%96%87%E4%BB%B6%E4%BB%A5-unity-%E4%B8%BA%E4%BE%8B"><span class="toc-number">1.2.</span> <span class="toc-text"> 2. 生成 .gitignore 过滤文件（以 Unity 为例）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9C%AC%E5%9C%B0%E6%8F%90%E4%BA%A4%E4%B8%8E-ssh-%E5%85%B3%E8%81%94%E6%8E%A8%E9%80%81"><span class="toc-number">1.3.</span> <span class="toc-text"> 3. 第一次本地提交与 SSH 关联推送</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E6%AF%8F%E6%AC%A1%E4%B8%8A%E4%BC%A0%E6%8C%87%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text"> 二、日常开发中的每次上传指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-gitignore-%E6%9C%BA%E5%88%B6%E4%B8%8E%E9%80%9A%E9%85%8D%E7%AC%A6%E8%AF%A6%E8%A7%A3"><span class="toc-number">3.</span> <span class="toc-text"> 三、.gitignore 机制与通配符详解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A0%B8%E5%BF%83%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99%E4%B8%8E%E7%A4%BA%E4%BE%8B"><span class="toc-number">3.1.</span> <span class="toc-text"> 1. 核心语法规则与示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88-unity-%E9%A1%B9%E7%9B%AE%E5%BF%85%E9%A1%BB%E9%85%8D%E7%BD%AE-gitignore"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 为什么 Unity 项目必须配置 .gitignore？</span></a></li></ol></li></ol>
 </div>
 </div>
         <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
@@ -454,14 +519,14 @@
       <script data-pjax>
         window.REIMU_POST = {
           author: "Yunagisk",
-          title: "Hexo + reimu 主题美化笔记",
-          url: "https://yunagisk.github.io/2026/06/25/hexo-reimu-notes/",
+          title: "Git 指令速查",
+          url: "https://yunagisk.github.io/2026/09/03/git-commands-cheatsheet/",
           excerpt: "",
           description: "",
-          stripContent: "最近把博客迁移到了 Hexo，并换上了 reimu 主题。记录一下配置过程中遇到的坑和美化心得。  头像配置 reimu 主题的头像路径会强制拼接 /avatar/，所以配置时只需要写文件名即可： 1avatar: avatar.png 同时头像文件需要放在 source/_data/avatar/ 目录下。  主色调修改 在 themes/reimu/_config.yml 的 internal_theme 里可以自定义一套颜色，我把主色调改成了冰蓝色。  首页分类横幅 开启 home_cat",
-          date: "Thu Jun 25 2026 19:30:00 GMT+0800",
-          updated: "Fri Jun 26 2026 00:08:26 GMT+0800",
-          cover: "/img/reimu-cover.jpg",
+          stripContent: "平时写项目总会遇到 Git 操作，记不住命令每次都要查一遍。这篇博客把日常用到的 Git + GitHub 指令整理出来，方便快速翻阅。  一、首次创建项目并同步至 GitHub  1. 本地新建文件夹并初始化 1234567891011# 新建文件夹（例如 MyGame）mkdir MyGame# 进入文件夹cd MyGame# 初始化本地 Git 仓库git init# 将默认分支名切换为 main（符合 GitHub 规范）git branch -M main  2. 生成 .gitign",
+          date: "Thu Sep 03 2026 20:57:00 GMT+0800",
+          updated: "Thu Sep 03 2026 21:25:45 GMT+0800",
+          cover: "/img/git-cover.jpg",
         };
       </script>
         

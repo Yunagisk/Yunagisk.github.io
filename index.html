@@ -1,13 +1,11 @@
   <!DOCTYPE html>
-  <html lang="zh-CN"  
-      data-theme-mode="auto"
-  >
+  <html lang="zh-CN"  data-theme-mode="auto">
   <head>
   <meta charset="utf-8">
   
   
   
-  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_ex15nbittbh';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://yunagisk.github.io';window.REIMU_CONFIG.relative = '/';</script>
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_ex15nbittbh';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://yunagisk.github.io';window.REIMU_CONFIG.relative = '/';window.REIMU_CONFIG.dark_mode = {"button":true,"mode":"auto"};</script>
   <title>
     Yunagisk
   </title>
@@ -41,7 +39,7 @@
     <link rel="stylesheet" href="/css/custom.css">
 <meta name="generator" content="Hexo 7.3.0"></head>
 
-  <body class="home">
+  <body>
       <div id='loader'>
     <div class="loading-left-bg loading-bg"></div>
     <div class="loading-right-bg loading-bg"></div>
@@ -157,7 +155,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">4</div>
+    <div class="sidebar-state-number">5</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -165,7 +163,7 @@
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">12</div>
+    <div class="sidebar-state-number">14</div>
   </div>
 </div>
 <div class="sidebar-social" >
@@ -229,6 +227,9 @@
       <div class="widget">
         <ul>
             <li>
+              <a href="/2026/09/03/git-commands-cheatsheet/" title="Git 指令速查">Git 指令速查</a>
+            </li>
+            <li>
               <a href="/2026/07/08/cpp-algorithm-string-search-dp/" title="C++算法：字符串算法 &amp;&amp; 基础搜索 &amp;&amp; 动态规划DP">C++算法：字符串算法 &amp;&amp; 基础搜索 &amp;&amp; 动态规划DP</a>
             </li>
             <li>
@@ -255,7 +256,7 @@
           <div class="post-categories-cover">
               <img data-src="/img/tech-cover.jpg" data-sizes="auto" alt="技术" class="lazyload">
             <h2>技术</h2>
-            <h3>3 篇文章</h3>
+            <h3>4 篇文章</h3>
           </div>
         </div>
         <div class="post-categories-wrap">
@@ -269,9 +270,34 @@
     </div>
       <div class="post-wrapper">
   <div class="post-wrap left" data-aos="fade-up">
-      <a class="post-link" href="/2026/06/25/%E5%8D%9A%E5%AE%A2%E6%8C%87%E4%BB%A4%E9%80%9F%E6%9F%A5/" aria-label="博客指令速查" title="博客指令速查"></a>
+      <a class="post-link" href="/2026/09/03/git-commands-cheatsheet/" aria-label="Git 指令速查" title="Git 指令速查"></a>
       <div class="post-sticky">置顶</div>
     <div class="post-cover left">
+        <img data-src="/img/git-cover.jpg" data-sizes="auto" alt="Git 指令速查" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2026-09-03</span>
+        <span><span class="icon-pencil"></span>847 字</span>
+        <span><span class="icon-clock"></span>4 分钟</span>
+      </div>
+      <h2 class="post-title">Git 指令速查</h2>
+      <article class="post-article">
+          平时写项目总会遇到 Git 操作，记不住命令每次都要查一遍。这篇博客把日常用到的 Git + GitHub 指令整理出来，方便快速翻阅。
+ 一、首次创建项目并同步至 GitHub
+ 1. 本地新建文件夹并初始化
+1234567891011# 新建文件夹（例如 MyGame）mkdir MyGame# 进入文件夹cd MyGame# 初始化本地 Git 仓库git init# 将默认分支名切换为 main（符合 GitHub 规范）git branch -M main
+ 2. 生成 .gitignore 过滤文件（以 Unity 为例）
+直接在 Git Bash 中复制运行以下代码块，避免添加 
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+      <a class="post-link" href="/2026/06/25/%E5%8D%9A%E5%AE%A2%E6%8C%87%E4%BB%A4%E9%80%9F%E6%9F%A5/" aria-label="博客指令速查" title="博客指令速查"></a>
+      <div class="post-sticky">置顶</div>
+    <div class="post-cover right">
         <img data-src="/img/post-cover.jpg" data-sizes="auto" alt="博客指令速查" class="lazyload">
     </div>
     <div class="post-info">
@@ -300,9 +326,9 @@ hexo s：server 的缩写，启动本地预览服务器，默认地址 http://lo
   </div>
 </div>
       <div class="post-wrapper">
-  <div class="post-wrap right" data-aos="fade-up">
+  <div class="post-wrap left" data-aos="fade-up">
       <a class="post-link" href="/2026/07/08/cpp-algorithm-string-search-dp/" aria-label="C++算法：字符串算法 &amp;&amp; 基础搜索 &amp;&amp; 动态规划DP" title="C++算法：字符串算法 &amp;&amp; 基础搜索 &amp;&amp; 动态规划DP"></a>
-    <div class="post-cover right">
+    <div class="post-cover left">
         <img data-src="/img/IMG_3652.JPG" data-sizes="auto" alt="C++算法：字符串算法 &amp;&amp; 基础搜索 &amp;&amp; 动态规划DP" class="lazyload">
     </div>
     <div class="post-info">
@@ -321,9 +347,9 @@ hexo s：server 的缩写，启动本地预览服务器，默认地址 http://lo
   </div>
 </div>
       <div class="post-wrapper">
-  <div class="post-wrap left" data-aos="fade-up">
+  <div class="post-wrap right" data-aos="fade-up">
       <a class="post-link" href="/2026/06/26/2026-%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E8%BD%AC%E4%B8%93%E4%B8%9A%E6%9C%BA%E8%AF%95/" aria-label="转专业真题+解析+小谈" title="转专业真题+解析+小谈"></a>
-    <div class="post-cover left">
+    <div class="post-cover right">
         <img data-src="/img/zhuan-ye-cover.jpg" data-sizes="auto" alt="转专业真题+解析+小谈" class="lazyload">
     </div>
     <div class="post-info">
@@ -346,9 +372,9 @@ CSDN原文：https://blog.csdn.net/Duskince/article/details/162019307
   </div>
 </div>
       <div class="post-wrapper">
-  <div class="post-wrap right" data-aos="fade-up">
+  <div class="post-wrap left" data-aos="fade-up">
       <a class="post-link" href="/2026/06/25/hexo-reimu-notes/" aria-label="Hexo + reimu 主题美化笔记" title="Hexo + reimu 主题美化笔记"></a>
-    <div class="post-cover right">
+    <div class="post-cover left">
         <img data-src="/img/reimu-cover.jpg" data-sizes="auto" alt="Hexo + reimu 主题美化笔记" class="lazyload">
     </div>
     <div class="post-info">
@@ -393,10 +419,10 @@ reimu 主题的头像路径会强制拼接 /avatar/，所以配置时只需要�
       </div>
       <div>
         <span class="icon-brush"></span>
-        8.6k
+        9.4k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:41
+        00:45
       </div>
       <div>
         <span class="icon-eye"></span>
@@ -424,7 +450,7 @@ reimu 主题的头像路径会强制拼接 /avatar/，所以配置时只需要�
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">4</div>
+    <div class="sidebar-state-number">5</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -432,7 +458,7 @@ reimu 主题的头像路径会强制拼接 /avatar/，所以配置时只需要�
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">12</div>
+    <div class="sidebar-state-number">14</div>
   </div>
 </div>
 <div class="sidebar-social" >
@@ -549,7 +575,7 @@ reimu 主题的头像路径会强制拼接 /avatar/，所以配置时只需要�
   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
                                                   
 `,'color: #ff5252;')
-    console.log('%c Theme.Reimu v' + '1.12.5' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.12.6' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
   </script>
   
 
