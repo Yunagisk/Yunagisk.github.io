@@ -278,17 +278,41 @@
     <div class="post-info">
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2026-09-03</span>
-        <span><span class="icon-pencil"></span>847 字</span>
-        <span><span class="icon-clock"></span>4 分钟</span>
+        <span><span class="icon-pencil"></span>1.8k 字</span>
+        <span><span class="icon-clock"></span>8 分钟</span>
       </div>
       <h2 class="post-title">Git 指令速查</h2>
       <article class="post-article">
-          平时写项目总会遇到 Git 操作，记不住命令每次都要查一遍。这篇博客把日常用到的 Git + GitHub 指令整理出来，方便快速翻阅。
- 一、首次创建项目并同步至 GitHub
- 1. 本地新建文件夹并初始化
-1234567891011# 新建文件夹（例如 MyGame）mkdir MyGame# 进入文件夹cd MyGame# 初始化本地 Git 仓库git init# 将默认分支名切换为 main（符合 GitHub 规范）git branch -M main
- 2. 生成 .gitignore 过滤文件（以 Unity 为例）
-直接在 Git Bash 中复制运行以下代码块，避免添加 
+           常用指令速查表
+以下命令在项目的 Git 仓库目录中执行，feat/gravity 是功能分支名称示例，可替换为自己的分支名。
+
+
+
+分类
+指令
+用途
+
+
+
+
+查看状态
+git status
+查看当前分支，以及文件的新增、修改、删除和暂存状态。
+
+
+远端配置
+git remote -v
+查看远端名称及拉取、推送地址；这条命令不会测试网络连接。
+
+
+连接检查
+git ls-remote origin
+尝试读取远端；能列出提交编号和分支等引用，说明远端读取连接正常，但不代表拥有推送权限。
+
+
+SSH 认证
+ssh -T git@github.com
+检查 GitHub 的 SSH 身份认证，适用
       </article>
     </div>
   </div>
@@ -419,10 +443,10 @@ reimu 主题的头像路径会强制拼接 /avatar/，所以配置时只需要�
       </div>
       <div>
         <span class="icon-brush"></span>
-        9.4k
+        10.4k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:45
+        00:49
       </div>
       <div>
         <span class="icon-eye"></span>
