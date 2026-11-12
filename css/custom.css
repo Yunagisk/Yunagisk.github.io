@@ -111,6 +111,8 @@
 }
 
 .friend-item-wrap {
+    width: 100% !important;
+    min-width: 0 !important;
     display: flex !important;
     align-items: center !important;
     background: rgba(255, 255, 255, 0.85) !important;
@@ -128,6 +130,7 @@
 }
 
 .friend-icon-wrap {
+    padding: 0 !important;
     flex-shrink: 0 !important;
     width: 56px !important;
     height: 56px !important;
